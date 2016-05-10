@@ -9,11 +9,12 @@ public class NicknamesDatabase {
 
     private static NicknamesDatabase database;
     private ArrayList<StringPair> list;
+
     {
         list = new ArrayList<StringPair>();
     }
 
-    private NicknamesDatabase(){
+    private NicknamesDatabase() {
 
         try {
             File in = new File("NicknamesDatabase.data");
@@ -30,7 +31,7 @@ public class NicknamesDatabase {
 
     }
 
-    public static NicknamesDatabase getInstance(){
+    public static NicknamesDatabase getInstance() {
         return (database == null) ? (database = new NicknamesDatabase()) : database;
     }
 

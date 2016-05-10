@@ -11,6 +11,7 @@ public class NameTree {
 
     private ArrayList<FullName> names;
     private boolean hasReduced;
+
     {
         hasReduced = false;
     }
@@ -25,8 +26,8 @@ public class NameTree {
 
     public NameTree removeDuplicates() {
         boolean foundDupe = false;
-        for (int i = 0; i < names.size()-1 && !foundDupe; i++) {
-            for(int j = i+1; j < names.size() && !foundDupe; j++) {
+        for (int i = 0; i < names.size() - 1 && !foundDupe; i++) {
+            for (int j = i + 1; j < names.size() && !foundDupe; j++) {
 
                 if (names.get(i).equals(names.get(j))) {
                     foundDupe = true;

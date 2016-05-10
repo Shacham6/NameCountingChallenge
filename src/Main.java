@@ -2,10 +2,7 @@
  * Created by shach on 5/9/2016.
  */
 
-import java.io.File;
 import java.util.ArrayList;
-import java.util.BitSet;
-import java.util.Scanner;
 
 import static org.junit.Assert.*;
 
@@ -24,7 +21,7 @@ public class Main {
                 smi = sFN.indexOf(" ");
         FullName[] names = {
                 ((bmi == -1)) ? new FullName(bFN, "", bLN) : new FullName(bFN.substring(0, bmi), bFN.substring(bmi + 1), bLN),
-                ((smi == -1)) ? new FullName(sFN, "", sLN) : new FullName(sFN.substring(0, smi), sFN.substring(smi +1), sLN),
+                ((smi == -1)) ? new FullName(sFN, "", sLN) : new FullName(sFN.substring(0, smi), sFN.substring(smi + 1), sLN),
                 new FullName(bNOC.split(" "))
         };
 
